@@ -1,0 +1,30 @@
+.footer-nav {
+  margin-bottom: 35px;
+}
+
+.footer-nav__title {
+  margin: 10px 0 37px;
+  font-size: 19px;
+  line-height: 24px;
+  color: $link;
+  text-transform: uppercase;
+}
+
+.footer-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav__item {
+  a {
+    font-size: 12px;
+    line-height: 24px;
+    color: $link;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

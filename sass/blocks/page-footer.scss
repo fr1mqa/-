@@ -1,0 +1,36 @@
+.page-footer {
+  text-align: center;
+  background-color: $bg;
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    text-align: left;
+  }
+
+  .footer-wrapper {
+    max-width: 1235px;
+    min-height: 240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .page-footer__nav {
+    float: left;
+    margin-right: 176px;
+  }
+
+  .page-footer__social {
+    float: left;
+  }
+
+  .page-footer__contacts {
+    float: right;
+  }
+}

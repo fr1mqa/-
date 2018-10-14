@@ -1,0 +1,57 @@
+.section-right {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-right__title {
+  color: $title-color;
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 19px;
+  margin: 11px 0 17px;
+  &.section-right--first::before {
+    @include before("../img/calculator-solid.svg");
+  }
+  &.section-right--second::before {
+    @include before("../img/journal-whills-solid.svg");
+  }
+}
+
+.section-right__text {
+  color: $text-color;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-right{
+    position: relative;
+    float: right;
+    max-width: 350px;
+    padding: 0;
+  }
+
+  .section-right__text {
+    margin-bottom: 6px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 930px) {
+  .section-right {
+    text-align: left;
+  }
+
+  .section-right__title {
+    &.section-right--first::before {
+      position: absolute;
+      top: 10px;
+      left: -100px;
+    }
+    &.section-right--second::before {
+      position: absolute;
+      top: 10px;
+      left: -100px;
+    }
+  }
+}

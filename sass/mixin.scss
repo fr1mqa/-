@@ -1,0 +1,15 @@
+@mixin before ($img) {
+  content: '';
+  position: relative;
+  left: calc(50% - 43px);
+  display: block;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background-color: $bg-icon;
+  background-image: url($img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  margin-bottom: 15px;
+}
